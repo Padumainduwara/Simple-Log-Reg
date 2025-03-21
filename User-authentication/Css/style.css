@@ -1,0 +1,331 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* ========== HOME PAGE (index.html) ========== */
+  .home-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* NAV BAR */
+  .home-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .home-nav-left {
+    display: flex;
+    align-items: center;
+  }
+  .home-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .brand-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .home-nav-right .btn {
+    margin-left: 10px;
+  }
+  
+  /* HERO SECTION */
+  .hero-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #00b0ff, #00c7dc);
+  }
+  
+  .hero-text {
+    flex: 1 1 400px;
+    color: #fff;
+    max-width: 600px;
+    padding: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .hero-buttons .btn {
+    margin-right: 10px;
+  }
+  
+  .hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+    padding: 1rem;
+  }
+  .hero-illustration {
+    max-width: 400px;
+    width: 80%;
+  }
+  
+  /* BUTTON STYLES (for Home Page) */
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.2s;
+  }
+  .btn-primary {
+    background-color: #2979ff;
+    color: #fff;
+  }
+  .btn-secondary {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .btn-primary:hover {
+    background-color: #1565c0;
+  }
+  .btn-secondary:hover {
+    background-color: #e2e2e2;
+  }
+  
+  /* ========== SPLIT CONTAINER (login.html / signup.html) ========== */
+  .split-container {
+    display: flex;
+    flex-wrap: wrap; /* so columns can wrap on small screens */
+    min-height: 100vh;
+  }
+  
+  /* LEFT SIDE - Illustration */
+  .illustration-area {
+    flex: 1;
+    background: #00b0ff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-width: 350px; /* So it doesn’t collapse too small */
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .illustration {
+    max-width: 300px;
+    width: 80%;
+  }
+  
+  /* RIGHT SIDE - Form */
+  .form-area {
+    flex: 1;
+    min-width: 350px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #2979ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #1565c0;
+  }
+  
+  .bottom-text {
+    font-size: 0.9rem;
+  }
+  .bottom-text .link-primary {
+    color: #2979ff;
+    text-decoration: none;
+  }
+  
+  /* Hide illustration area on smaller screens (optional) */
+  @media (max-width: 768px) {
+    .illustration-area {
+      display: none;
+    }
+    .form-area {
+      flex: 1 1 100%;
+      min-width: auto;
+      padding: 40px;
+    }
+  }
+  
+/* Dashboard-only styles */
+:root {
+    --primary: #6366f1;       /* underline and accent color */
+    --background: #f8fafc;    /* light page background */
+    --card-bg: #ffffff;       /* card background color */
+    --text: #1e293b;          /* text color */
+    --shadow: 0 1px 3px rgba(0,0,0,0.12);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--background);
+    color: var(--text);
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Heading with underline */
+  .dashboard-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .dashboard-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+  }
+  
+  /* Card grid layout */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Individual card styles */
+  .card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    color: var(--primary);
+  }
+  
+  /* Optional top bar effect on hover */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 1.5rem 0.5rem;
+    }
+    .dashboard-container h1 {
+      font-size: 2rem;
+      padding-left: 0.5rem;
+    }
+    .card {
+      padding: 1.5rem;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
